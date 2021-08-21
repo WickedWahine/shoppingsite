@@ -5,7 +5,7 @@ melon by id.
 
 It reads melon data in from a text file.
 """
-
+melon_types = {}
 
 class Melon(object):
     """An Ubermelon Melon type."""
@@ -44,7 +44,7 @@ def read_melon_types_from_file(filepath):
     Dictionary will be {id: Melon object}
     """
 
-    melon_types = {}
+    #melon_types = {}
 
     with open(filepath) as file:
         for line in file:
